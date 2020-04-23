@@ -1,0 +1,255 @@
+/* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+header {
+  display: flex;
+  justify-content: space-between;
+}
+header h1 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+header ul {
+  display: flex;
+}
+header ul li {
+  padding-left: 2rem;
+}
+
+main {
+  display: flex;
+}
+main section {
+  margin-top: 13%;
+  margin-left: 5%;
+}
+main section h1 {
+  font-size: 3.5rem;
+  padding-bottom: 0.5rem;
+  font-weight: 800;
+}
+main section p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+main section button {
+  margin-top: 5%;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+}
+main section button a {
+  font-weight: 500;
+}
+main section #projects-btn {
+  background: #262626;
+  border: none;
+}
+main section #projects-btn a {
+  color: white;
+}
+main section #resume-btn {
+  background: none;
+  border: 2px solid #262626;
+  margin-left: 1rem;
+}
+main img {
+  width: 40rem;
+  border-radius: 8px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+#projects {
+  margin-top: 5%;
+}
+#projects .card {
+  width: 100%;
+  width: 100%;
+  background: rgba(10, 164, 224, 0.2);
+  border-radius: 8px;
+  padding: 3rem 0rem 3rem 3rem;
+  margin-top: 2%;
+}
+#projects .card p {
+  width: 30vw;
+}
+#projects .card button {
+  margin-top: 2%;
+  background: #262626;
+  border: none;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 4px;
+}
+#projects .card button a {
+  color: #f8f8f8;
+}
+
+#other-projects {
+  margin-top: 5%;
+}
+#other-projects h1 {
+  text-align: center;
+}
+#other-projects .card-wrapper {
+  display: flex;
+  justify-content: center;
+}
+#other-projects .card {
+  display: flex;
+  width: 20vw;
+  margin-top: 5%;
+  background: rgba(10, 164, 224, 0.2);
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+}
+#other-projects .card h2 {
+  text-align: center;
+}
+#other-projects .card p {
+  margin-top: 5%;
+  text-align: center;
+}
+#other-projects .card button {
+  background: #262626;
+  border: none;
+  margin-top: 5%;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+}
+#other-projects .card button a {
+  font-weight: 500;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  padding: 2rem 5rem;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#commits {
+  margin-top: 5%;
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+#commits h2 {
+  padding-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+#commits img {
+  width: 80rem;
+}
+
+#about-section {
+  margin-top: 5%;
+}
+#about-section h1 {
+  font-size: 2rem;
+  font-weight: 800;
+}
+#about-section p {
+  padding-top: 2rem;
+  width: 40vw;
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */

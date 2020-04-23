@@ -1,0 +1,57 @@
+@import "./reset.scss";
+@import "./header.scss";
+@import "./main-section.scss";
+@import "./projects.scss";
+@import "./other-projects.scss";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Manrope", sans-serif;
+  padding: 2rem 5rem;
+}
+
+.header {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#commits {
+  margin-top: 5%;
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+
+  h2 {
+    padding-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  img {
+    width: 80rem;
+  }
+}
+
+#about-section {
+  margin-top: 5%;
+
+  h1 {
+    font-size: 2rem;
+    font-weight: 800;
+  }
+
+  p {
+    padding-top: 2rem;
+    width: 40vw;
+  }
+}

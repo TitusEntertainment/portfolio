@@ -1,0 +1,52 @@
+main {
+  display: flex;
+
+  section {
+    margin-top: 13%;
+    margin-left: 5%;
+
+    h1 {
+      font-size: 3.5rem;
+      padding-bottom: 0.5rem;
+      font-weight: 800;
+    }
+
+    p {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    button {
+      margin-top: 5%;
+      width: 10rem;
+      height: 2.5rem;
+      border-radius: 0.3rem;
+
+      a {
+        font-weight: 500;
+      }
+    }
+
+    #projects-btn {
+      background: #262626;
+      border: none;
+
+      a {
+        color: white;
+      }
+    }
+
+    #resume-btn {
+      background: none;
+      border: 2px solid #262626;
+      margin-left: 1rem;
+    }
+  }
+
+  img {
+    width: 40rem;
+    border-radius: 8px;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+}

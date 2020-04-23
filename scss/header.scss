@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    font-weight: 500;
+    font-size: 1rem;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      padding-left: 2rem;
+    }
+  }
+}
