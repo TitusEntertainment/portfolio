@@ -1,8 +1,10 @@
+@use 'colors/var';
 @import "./reset.scss";
-@import "./header.scss";
-@import "./main-section.scss";
-@import "./projects.scss";
-@import "./other-projects.scss";
+@import "./content/header.scss";
+@import "./content/main-section.scss";
+@import "./content/projects.scss";
+@import "./content/other-projects.scss";
+@import "./content/contact.scss";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 
 body {
@@ -10,6 +12,8 @@ body {
   padding: 0;
   font-family: "Manrope", sans-serif;
   padding: 2rem 5rem;
+  overflow-x: hidden;
+  background: var.$offWhite;
 }
 
 .header {
@@ -18,12 +22,12 @@ body {
 }
 
 a {
-  color: black;
+  color: var.$offBlack;
   text-decoration: none;
 }
 
 #commits {
-  margin-top: 5%;
+  margin-top: 8%;
   width: 100vw;
   height: 25vh;
   display: flex;
@@ -38,13 +42,15 @@ a {
   }
 
   img {
-    width: 80rem;
+    width: 80vw;
+    margin-left: 5vw;
+    border-radius: 8px;
   }
 }
 
 #about-section {
   margin-top: 5%;
-
+  padding: 2rem 6rem;
   h1 {
     font-size: 2rem;
     font-weight: 800;

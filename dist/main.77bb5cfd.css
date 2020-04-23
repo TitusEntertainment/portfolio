@@ -87,13 +87,17 @@ header {
 }
 header h1 {
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: #181a1b;
 }
 header ul {
   display: flex;
 }
 header ul li {
   padding-left: 2rem;
+}
+header ul li a {
+  color: #181a1b;
 }
 
 main {
@@ -107,10 +111,12 @@ main section h1 {
   font-size: 3.5rem;
   padding-bottom: 0.5rem;
   font-weight: 800;
+  color: #181a1b;
 }
 main section p {
   font-size: 1rem;
   font-weight: 500;
+  color: #181a1b;
 }
 main section button {
   margin-top: 5%;
@@ -122,15 +128,15 @@ main section button a {
   font-weight: 500;
 }
 main section #projects-btn {
-  background: #262626;
+  background: #181a1b;
   border: none;
 }
 main section #projects-btn a {
-  color: white;
+  color: #f8f8f8;
 }
 main section #resume-btn {
   background: none;
-  border: 2px solid #262626;
+  border: 2px solid #181a1b;
   margin-left: 1rem;
 }
 main img {
@@ -142,11 +148,12 @@ main img {
 
 #projects {
   margin-top: 5%;
+  padding: 0rem 5rem;
 }
 #projects .card {
   width: 100%;
   width: 100%;
-  background: rgba(10, 164, 224, 0.2);
+  background: #e3eff4;
   border-radius: 8px;
   padding: 3rem 0rem 3rem 3rem;
   margin-top: 2%;
@@ -156,7 +163,7 @@ main img {
 }
 #projects .card button {
   margin-top: 2%;
-  background: #262626;
+  background: #181a1b;
   border: none;
   width: 10rem;
   height: 2.5rem;
@@ -171,38 +178,99 @@ main img {
 }
 #other-projects h1 {
   text-align: center;
+  color: #181a1b;
 }
 #other-projects .card-wrapper {
   display: flex;
-  justify-content: center;
-}
-#other-projects .card {
-  display: flex;
-  width: 20vw;
+  justify-content: space-evenly;
   margin-top: 5%;
+  padding: 0rem 5rem;
+  height: 100%;
+  width: 100vw;
+}
+#other-projects .card-wrapper .card {
+  display: flex;
+  width: 25rem;
+  height: 50vh;
+  background: #e3eff4;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -10%;
+  border-radius: 8px;
+}
+#other-projects .card-wrapper .card h2 {
+  text-align: center;
+  color: #181a1b;
+  font-size: 2rem;
+  margin-bottom: 15%;
+}
+#other-projects .card-wrapper .card p {
+  width: 60%;
+  text-align: center;
+  color: #181a1b;
+}
+#other-projects .card-wrapper .card button {
+  background: #181a1b;
+  border: none;
+  margin-top: 15%;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 0.3rem;
+}
+#other-projects .card-wrapper .card button a {
+  font-weight: 500;
+  color: #f8f8f8;
+}
+#other-projects .card:nth-child(2) {
   background: rgba(10, 164, 224, 0.2);
-  padding: 2rem;
+  width: 25rem;
+  height: 55vh;
+}
+#other-projects .card:nth-child(odd) {
+  margin-top: 1.5%;
+}
+
+#contact {
+  display: flex;
   flex-direction: column;
   justify-content: center;
-}
-#other-projects .card h2 {
-  text-align: center;
-}
-#other-projects .card p {
+  align-items: center;
   margin-top: 5%;
-  text-align: center;
 }
-#other-projects .card button {
-  background: #262626;
+#contact span {
+  color: #e73636;
+}
+#contact h1 {
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100rem;
+}
+#contact form input {
+  width: 40rem;
+  padding: 1rem;
+  background: rgba(10, 164, 224, 0.2);
+  border: none;
+  margin-top: 2rem;
+}
+#contact form #message {
+  height: 20vh;
+  width: 40rem;
+}
+#contact form button {
+  background: #181a1b;
   border: none;
   margin-top: 5%;
   width: 10rem;
   height: 2.5rem;
   border-radius: 0.3rem;
-}
-#other-projects .card button a {
   font-weight: 500;
-  color: white;
+  color: #f8f8f8;
 }
 
 body {
@@ -210,6 +278,8 @@ body {
   padding: 0;
   font-family: "Manrope", sans-serif;
   padding: 2rem 5rem;
+  overflow-x: hidden;
+  background: #f8f8f8;
 }
 
 .header {
@@ -218,12 +288,12 @@ body {
 }
 
 a {
-  color: black;
+  color: #181a1b;
   text-decoration: none;
 }
 
 #commits {
-  margin-top: 5%;
+  margin-top: 8%;
   width: 100vw;
   height: 25vh;
   display: flex;
@@ -237,11 +307,14 @@ a {
   font-size: 1.1rem;
 }
 #commits img {
-  width: 80rem;
+  width: 80vw;
+  margin-left: 5vw;
+  border-radius: 8px;
 }
 
 #about-section {
   margin-top: 5%;
+  padding: 2rem 6rem;
 }
 #about-section h1 {
   font-size: 2rem;

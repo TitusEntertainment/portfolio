@@ -73,47 +73,45 @@
 
       <div class="card-wrapper">
         <div class="card">
-          <h2>name</h2>
+          <h2>Cache api</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque cumque ipsa veritatis cupiditate
-            culpa enim provident aperiam dolorum eius hic, exercitationem mollitia rerum, doloremque neque totam impedit
-            nam odio.
+            A caching GraphQl/Express Api that fetches from reddit and returns a single post to the client. The api is
+            very efficient and makes working with content based applications a breeze because all you need is on GET
+            request.
           </p>
           <button><a href="#">Learn more</a></button>
         </div>
         <div class="card">
-          <h2>name</h2>
+          <h2>CourseBot</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque cumque ipsa veritatis cupiditate
-            culpa enim provident aperiam dolorum eius hic, exercitationem mollitia rerum, doloremque neque totam impedit
-            nam odio.
+            CourseBot is a Discord bot written in Typescirpt the discord.js library and the Discord Akairo framework.
+            The bot was created to ease the worlflow for moderators in diffirent Discord guilds. It can do anything
+            moderating related and more!
           </p>
           <button><a href="#">Learn more</a></button>
         </div>
         <div class="card">
-          <h2>name</h2>
+          <h2>Api client</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam itaque cumque ipsa veritatis cupiditate
-            culpa enim provident aperiam dolorum eius hic, exercitationem mollitia rerum, doloremque neque totam impedit
-            nam odio.
+            To make fetching from my cache api even easier, I've made an Typescript based npm module that anyone can
+            use. It can get anything from my cache api and it's also configurable so that in case you're selfhosting the
+            cache api you can point it there.
           </p>
           <button><a href="#">Learn more</a></button>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="contact">
       <h1 class="header">Get in touch!</h1>
       <form action="" method="post">
-        <label for="email">Email<span>*</span></label>
-        <input type="email" name="email" id="email" />
-        <label for="name">Name<span>*</span></label>
-        <input type="text" />
-        <label for="message">Message<span>*</span></label>
-        <input type="text" />
+        <input type="email" name="email" id="email" placeholder="Email*" />
+        <input type="text" placeholder="Full name or company name*" />
+        <input placeholder="Your message :D*" type="text" id="message" />
+        <button type="submit">Submit</button>
       </form>
     </section>
 
-    <script src="index.js"></script>
+    <script defer src="index.js"></script>
   </body>
 </html>

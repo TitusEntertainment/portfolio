@@ -1,3 +1,5 @@
+@use 'colors/var';
+
 main {
   display: flex;
 
@@ -9,11 +11,13 @@ main {
       font-size: 3.5rem;
       padding-bottom: 0.5rem;
       font-weight: 800;
+      color: var.$offBlack;
     }
 
     p {
       font-size: 1rem;
       font-weight: 500;
+      color: var.$offBlack;
     }
 
     button {
@@ -28,17 +32,17 @@ main {
     }
 
     #projects-btn {
-      background: #262626;
+      background: var.$offBlack;
       border: none;
 
       a {
-        color: white;
+        color: var.$offWhite;
       }
     }
 
     #resume-btn {
       background: none;
-      border: 2px solid #262626;
+      border: 2px solid var.$offBlack;
       margin-left: 1rem;
     }
   }

@@ -1,10 +1,13 @@
+@use 'colors/var';
+
 #projects {
   margin-top: 5%;
+  padding: 0rem 5rem;
 
   .card {
     width: 100%;
     width: 100%;
-    background: rgba(10, 164, 224, 0.2);
+    background: var.$babyBlue;
     border-radius: 8px;
 
     padding: 3rem 0rem 3rem 3rem;
@@ -16,14 +19,14 @@
 
     button {
       margin-top: 2%;
-      background: #262626;
+      background: var.$offBlack;
       border: none;
       width: 10rem;
       height: 2.5rem;
       border-radius: 4px;
 
       a {
-        color: #f8f8f8;
+        color: var.$offWhite;
       }
     }
   }

@@ -1,0 +1,68 @@
+@use 'colors/var';
+
+#other-projects {
+  margin-top: 5%;
+  h1 {
+    text-align: center;
+    color: var.$offBlack;
+  }
+
+  .card-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    padding: 0rem 5rem;
+    height: 100%;
+    width: 100vw;
+
+    .card {
+      display: flex;
+      width: 25rem;
+      height: 50vh;
+      background: var.$babyBlue;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+
+      margin-left: -10%;
+      border-radius: 8px;
+
+      h2 {
+        text-align: center;
+        color: var.$offBlack;
+        font-size: 2rem;
+        margin-bottom: 15%;
+      }
+
+      p {
+        width: 60%;
+        text-align: center;
+        color: var.$offBlack;
+      }
+
+      button {
+        background: var.$offBlack;
+        border: none;
+        margin-top: 15%;
+        width: 10rem;
+        height: 2.5rem;
+        border-radius: 0.3rem;
+
+        a {
+          font-weight: 500;
+          color: var.$offWhite;
+        }
+      }
+    }
+  }
+
+  .card:nth-child(2) {
+    background: var.$babyBlueDarker;
+    width: 25rem;
+    height: 55vh;
+  }
+
+  .card:nth-child(odd) {
+    margin-top: 1.5%;
+  }
+}
