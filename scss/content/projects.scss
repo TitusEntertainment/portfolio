@@ -9,24 +9,36 @@
     width: 100%;
     background: var.$babyBlue;
     border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
 
-    padding: 3rem 0rem 3rem 3rem;
+    padding: 3rem 0rem 0rem 3rem;
     margin-top: 2%;
 
-    p {
-      width: 30vw;
+    img {
+      margin-right: 5%;
+      position: relative;
+      bottom: 0px;
     }
 
-    button {
-      margin-top: 2%;
-      background: var.$offBlack;
-      border: none;
-      width: 10rem;
-      height: 2.5rem;
-      border-radius: 4px;
+    .inner-card-wrapper {
+      p {
+        padding-top: 2%;
+        width: 30vw;
+        line-height: 1.8rem;
+      }
 
-      a {
-        color: var.$offWhite;
+      button {
+        margin-top: 5%;
+        background: var.$offBlack;
+        border: none;
+        width: 10rem;
+        height: 2.5rem;
+        border-radius: 4px;
+
+        a {
+          color: var.$offWhite;
+        }
       }
     }
   }

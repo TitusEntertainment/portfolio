@@ -85,6 +85,9 @@ header {
   display: flex;
   justify-content: space-between;
 }
+header #hierable {
+  color: #db9d56;
+}
 header h1 {
   font-weight: 500;
   font-size: 1.2rem;
@@ -98,13 +101,17 @@ header ul li {
 }
 header ul li a {
   color: #181a1b;
+  transition: 0.3s ease;
+}
+header ul li a:hover {
+  color: rgba(10, 164, 224, 0.5);
 }
 
 main {
   display: flex;
 }
 main section {
-  margin-top: 13%;
+  margin-top: 16.5%;
   margin-left: 5%;
 }
 main section h1 {
@@ -153,23 +160,32 @@ main img {
 #projects .card {
   width: 100%;
   width: 100%;
-  background: #e3eff4;
+  background: rgba(10, 164, 224, 0.11);
   border-radius: 8px;
-  padding: 3rem 0rem 3rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 0rem 0rem 3rem;
   margin-top: 2%;
 }
-#projects .card p {
+#projects .card img {
+  margin-right: 5%;
+  position: relative;
+  bottom: 0px;
+}
+#projects .card .inner-card-wrapper p {
+  padding-top: 2%;
   width: 30vw;
+  line-height: 1.8rem;
 }
-#projects .card button {
-  margin-top: 2%;
+#projects .card .inner-card-wrapper button {
+  margin-top: 5%;
   background: #181a1b;
   border: none;
   width: 10rem;
   height: 2.5rem;
   border-radius: 4px;
 }
-#projects .card button a {
+#projects .card .inner-card-wrapper button a {
   color: #f8f8f8;
 }
 
@@ -192,7 +208,7 @@ main img {
   display: flex;
   width: 25rem;
   height: 50vh;
-  background: #e3eff4;
+  background: rgba(10, 164, 224, 0.11);
   justify-content: center;
   flex-direction: column;
   align-items: center;
@@ -272,6 +288,25 @@ main img {
   font-weight: 500;
   color: #f8f8f8;
 }
+#contact p {
+  padding: 1rem;
+  font-weight: 600;
+}
+#contact div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#contact div svg {
+  margin: 0 1rem;
+}
+#contact div svg:nth-child(odd) {
+  width: 1.8rem;
+}
+
+* {
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -293,22 +328,32 @@ a {
 }
 
 #commits {
-  margin-top: 8%;
-  width: 100vw;
-  height: 25vh;
+  height: 100%;
+  width: 90vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+}
+#commits div {
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background: #181a1b;
+  border-radius: 8px;
 }
 #commits h2 {
+  padding-top: 2rem;
   padding-bottom: 2rem;
   font-weight: 600;
   font-size: 1.1rem;
+  color: #181a1b;
 }
 #commits img {
-  width: 80vw;
-  margin-left: 5vw;
+  width: 100%;
   border-radius: 8px;
 }
 

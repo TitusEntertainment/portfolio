@@ -7,6 +7,10 @@
 @import "./content/contact.scss";
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 
+* {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -27,23 +31,34 @@ a {
 }
 
 #commits {
-  margin-top: 8%;
-  width: 100vw;
-  height: 25vh;
+  height: 100%;
+  width: 90vw;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%;
+
+  div {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #181a1b;
+    border-radius: 8px;
+  }
 
   h2 {
+    padding-top: 2rem;
     padding-bottom: 2rem;
     font-weight: 600;
     font-size: 1.1rem;
+    color: var.$offBlack;
   }
 
   img {
-    width: 80vw;
-    margin-left: 5vw;
+    width: 100%;
     border-radius: 8px;
   }
 }

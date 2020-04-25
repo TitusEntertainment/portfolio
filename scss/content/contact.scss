@@ -47,4 +47,22 @@
       color: var.$offWhite;
     }
   }
+  p {
+    padding: 1rem;
+    font-weight: 600;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      margin: 0 1rem;
+    }
+
+    svg:nth-child(odd) {
+      width: 1.8rem;
+    }
+  }
 }
