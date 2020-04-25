@@ -118,7 +118,14 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
+var hire = document.getElementById("hierable");
+console.log(hire.innerText == "true");
 
+if (hire.innerText == "true") {
+  hire.style.color = "#50bd3c";
+} else {
+  hire.style.color = "#db9d56";
+}
 },{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
