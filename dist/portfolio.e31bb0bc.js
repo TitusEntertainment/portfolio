@@ -118,18 +118,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"index.js":[function(require,module,exports) {
-var hireable = document.getElementById("hierable");
-fetch("https://api.github.com/users/TitusEntertainment").then(function (res) {
-  return res.json();
-}).then(function (data) {
-  console.log(data);
 
-  if (data.hireable) {
-    hireable.innerHTML = "true";
-  } else {
-    hireable.innerHTML = "false";
-  }
-});
 },{}],"../../.config/yarn/global/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
