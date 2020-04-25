@@ -119,7 +119,6 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   return newRequire;
 })({"index.js":[function(require,module,exports) {
 var hire = document.getElementById("hierable");
-console.log(hire.innerText == "true");
 
 if (hire.innerText == "true") {
   hire.style.color = "#50bd3c";
