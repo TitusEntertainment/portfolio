@@ -2,10 +2,8 @@
 
 #projects {
   margin-top: 5%;
-  padding: 0rem 5rem;
 
   .card {
-    width: 100%;
     width: 100%;
     background: var.$babyBlue;
     border-radius: 8px;
@@ -21,9 +19,11 @@
     }
 
     .inner-card-wrapper {
+      text-align: center;
+
       p {
         padding-top: 2%;
-        width: 30vw;
+        width: 100vw;
         line-height: 1.8rem;
       }
 
@@ -39,6 +39,16 @@
           color: var.$offWhite;
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  #projects {
+    .card {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
     }
   }
 }

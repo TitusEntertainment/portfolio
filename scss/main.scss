@@ -5,6 +5,7 @@
 @import "./content/projects.scss";
 @import "./content/other-projects.scss";
 @import "./content/contact.scss";
+
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap");
 
 * {
@@ -74,5 +75,36 @@ a {
   p {
     padding-top: 2rem;
     width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    padding: 2rem 0rem;
+  }
+
+  #commits {
+    width: 100%;
+
+    h2 {
+      font-size: 1.5rem;
+    }
+    div {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 10vh;
+      border-radius: 4px;
+    }
+  }
+
+  #about-section {
+    text-align: center;
+
+    p {
+      width: 100%;
+    }
   }
 }

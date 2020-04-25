@@ -107,6 +107,23 @@ header ul li a:hover {
   color: rgba(10, 164, 224, 0.5);
 }
 
+@media only screen and (max-width: 720px) {
+  header {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  header h1 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: #181a1b;
+    width: 100vw;
+    padding-left: 2rem;
+  }
+  header nav {
+    visibility: hidden;
+  }
+}
 main {
   display: flex;
 }
@@ -153,12 +170,64 @@ main img {
   margin-top: 5%;
 }
 
+@media only screen and (max-width: 720px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+  }
+  main section {
+    margin-top: 16.5%;
+    width: 100%;
+    padding: 0;
+    margin-left: 0;
+  }
+  main section p {
+    font-size: 1.4rem;
+  }
+  main section h1 {
+    font-size: 5rem;
+    padding: 0;
+    padding-bottom: 0.5rem;
+    font-weight: 800;
+    color: #181a1b;
+  }
+  main section button {
+    margin-top: 10%;
+    width: 15rem;
+    height: 5rem;
+    border-radius: 0.3rem;
+  }
+  main section button a {
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+  main section #projects-btn {
+    background: #181a1b;
+    border: none;
+  }
+  main section #projects-btn a {
+    color: #f8f8f8;
+  }
+  main section #resume-btn {
+    background: none;
+    border: 2px solid #181a1b;
+  }
+  main img {
+    width: 40rem;
+    border-radius: 0px;
+    margin-top: 40%;
+    margin-left: 0;
+  }
+}
 #projects {
   margin-top: 5%;
-  padding: 0rem 5rem;
 }
 #projects .card {
-  width: 100%;
   width: 100%;
   background: rgba(10, 164, 224, 0.11);
   border-radius: 8px;
@@ -171,9 +240,12 @@ main img {
   position: relative;
   bottom: 0px;
 }
+#projects .card .inner-card-wrapper {
+  text-align: center;
+}
 #projects .card .inner-card-wrapper p {
   padding-top: 2%;
-  width: 30vw;
+  width: 100vw;
   line-height: 1.8rem;
 }
 #projects .card .inner-card-wrapper button {
@@ -188,6 +260,13 @@ main img {
   color: #f8f8f8;
 }
 
+@media only screen and (max-width: 720px) {
+  #projects .card {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
 #other-projects {
   margin-top: 5%;
 }
@@ -369,6 +448,34 @@ a {
 #about-section p {
   padding-top: 2rem;
   width: 40vw;
+}
+
+@media only screen and (max-width: 720px) {
+  body {
+    padding: 2rem 0rem;
+  }
+
+  #commits {
+    width: 100%;
+  }
+  #commits h2 {
+    font-size: 1.5rem;
+  }
+  #commits div {
+    width: 100%;
+  }
+  #commits img {
+    width: 100%;
+    height: 10vh;
+    border-radius: 4px;
+  }
+
+  #about-section {
+    text-align: center;
+  }
+  #about-section p {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

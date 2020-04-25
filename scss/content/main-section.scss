@@ -54,3 +54,67 @@ main {
     margin-top: 5%;
   }
 }
+
+@media only screen and (max-width: 720px) {
+  main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0;
+    height: 100%;
+    text-align: center;
+
+    section {
+      margin-top: 16.5%;
+      width: 100%;
+      padding: 0;
+      margin-left: 0;
+
+      p {
+        font-size: 1.4rem;
+      }
+
+      h1 {
+        font-size: 5rem;
+        padding: 0;
+        padding-bottom: 0.5rem;
+        font-weight: 800;
+        color: var.$offBlack;
+      }
+
+      button {
+        margin-top: 10%;
+        width: 15rem;
+        height: 5rem;
+        border-radius: 0.3rem;
+
+        a {
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+      }
+
+      #projects-btn {
+        background: var.$offBlack;
+        border: none;
+
+        a {
+          color: var.$offWhite;
+        }
+      }
+
+      #resume-btn {
+        background: none;
+        border: 2px solid var.$offBlack;
+      }
+    }
+
+    img {
+      width: 40rem;
+      border-radius: 0px;
+      margin-top: 40%;
+      margin-left: 0;
+    }
+  }
+}
