@@ -4,11 +4,13 @@
   margin-top: 5%;
 
   .card {
-    width: 100%;
+    width: 90%;
     background: var.$babyBlue;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    margin-left: 5rem;
 
     padding: 3rem;
     margin-top: 2%;
@@ -16,15 +18,17 @@
     img {
       position: relative;
       bottom: 0px;
+      margin: 0;
     }
 
     .inner-card-wrapper {
-      text-align: center;
+      text-align: left;
 
       p {
         padding-top: 2%;
-        width: 100vw;
+        width: 30vw;
         line-height: 1.8rem;
+        text-align: left;
       }
 
       button {
@@ -43,12 +47,35 @@
   }
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1000px) {
   #projects {
     .card {
       flex-direction: column;
+      justify-content: center;
       align-items: center;
       width: 100%;
+      margin: 0;
+      margin-top: 5%;
+
+      img {
+        margin-top: 10%;
+        width: 20rem;
+      }
+
+      button {
+        margin-left: 34%;
+      }
+
+      .inner-card-wrapper {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        p {
+          width: 85vw;
+        }
+      }
     }
   }
 }

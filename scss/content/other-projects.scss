@@ -66,3 +66,34 @@
     margin-top: 1.5%;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+  #other-projects {
+    .card-wrapper {
+      flex-direction: column;
+      padding: 0;
+
+      .card:nth-child(2) {
+        background: var.$babyBlue;
+      }
+
+      .card {
+        margin: 0;
+        margin-top: 5%;
+        width: 100vw;
+
+        h2 {
+          margin-bottom: 10%;
+        }
+
+        button {
+          margin-top: 5%;
+        }
+
+        p {
+          width: 90%;
+        }
+      }
+    }
+  }
+}

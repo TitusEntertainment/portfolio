@@ -107,18 +107,20 @@ header ul li a:hover {
   color: rgba(10, 164, 224, 0.5);
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1000px) {
   header {
     width: 100vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   header h1 {
     font-weight: 500;
     font-size: 1.2rem;
     color: #181a1b;
     width: 100vw;
-    padding-left: 2rem;
+    padding-left: 0;
+    text-align: center;
   }
   header nav {
     visibility: hidden;
@@ -170,7 +172,7 @@ main img {
   margin-top: 5%;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1000px) {
   main {
     flex-direction: column;
     justify-content: center;
@@ -228,25 +230,29 @@ main img {
   margin-top: 5%;
 }
 #projects .card {
-  width: 100%;
+  width: 90%;
   background: rgba(10, 164, 224, 0.11);
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
+  margin-left: 5rem;
   padding: 3rem;
   margin-top: 2%;
 }
 #projects .card img {
   position: relative;
   bottom: 0px;
+  margin: 0;
 }
 #projects .card .inner-card-wrapper {
-  text-align: center;
+  text-align: left;
 }
 #projects .card .inner-card-wrapper p {
   padding-top: 2%;
-  width: 100vw;
+  width: 30vw;
   line-height: 1.8rem;
+  text-align: left;
 }
 #projects .card .inner-card-wrapper button {
   margin-top: 5%;
@@ -260,11 +266,30 @@ main img {
   color: #f8f8f8;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1000px) {
   #projects .card {
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    margin: 0;
+    margin-top: 5%;
+  }
+  #projects .card img {
+    margin-top: 10%;
+    width: 20rem;
+  }
+  #projects .card button {
+    margin-left: 34%;
+  }
+  #projects .card .inner-card-wrapper {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #projects .card .inner-card-wrapper p {
+    width: 85vw;
   }
 }
 #other-projects {
@@ -325,6 +350,29 @@ main img {
   margin-top: 1.5%;
 }
 
+@media only screen and (max-width: 1000px) {
+  #other-projects .card-wrapper {
+    flex-direction: column;
+    padding: 0;
+  }
+  #other-projects .card-wrapper .card:nth-child(2) {
+    background: rgba(10, 164, 224, 0.11);
+  }
+  #other-projects .card-wrapper .card {
+    margin: 0;
+    margin-top: 5%;
+    width: 100vw;
+  }
+  #other-projects .card-wrapper .card h2 {
+    margin-bottom: 10%;
+  }
+  #other-projects .card-wrapper .card button {
+    margin-top: 5%;
+  }
+  #other-projects .card-wrapper .card p {
+    width: 90%;
+  }
+}
 #contact {
   display: flex;
   flex-direction: column;
@@ -384,6 +432,22 @@ main img {
   width: 1.8rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  #contact form input,
+#contact form textarea,
+#contact form #message {
+    width: 90vw;
+  }
+  #contact form input,
+#contact form textarea {
+    height: 5rem;
+  }
+  #contact form button {
+    height: 8vh;
+    width: 30vw;
+    font-size: 1.4rem;
+  }
+}
 * {
   scroll-behavior: smooth;
 }
@@ -450,7 +514,7 @@ a {
   width: 40vw;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 1000px) {
   body {
     padding: 2rem 0rem;
   }
