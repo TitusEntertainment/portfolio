@@ -126,6 +126,12 @@ header ul li a:hover {
     visibility: hidden;
   }
 }
+@media only screen and (min-width: 2080px) {
+  header nav ul li a,
+header nav ul li {
+    font-size: 1.2rem;
+  }
+}
 main {
   display: flex;
 }
@@ -203,6 +209,7 @@ main img {
     width: 15rem;
     height: 5rem;
     border-radius: 0.3rem;
+    margin-left: 0;
   }
   main section button a {
     font-weight: 500;
@@ -211,12 +218,14 @@ main img {
   main section #projects-btn {
     background: #181a1b;
     border: none;
+    margin-left: 0;
   }
   main section #projects-btn a {
     color: #f8f8f8;
   }
   main section #resume-btn {
     background: none;
+    margin-left: 0;
     border: 2px solid #181a1b;
   }
   main img {
@@ -224,6 +233,27 @@ main img {
     border-radius: 0px;
     margin-top: 40%;
     margin-left: 0;
+  }
+}
+@media only screen and (min-width: 2080px) {
+  main {
+    margin-top: 2.5%;
+  }
+  main section h1 {
+    font-size: 4rem;
+  }
+  main section p {
+    font-size: 1.3rem;
+    margin-top: 3%;
+  }
+  main section button {
+    font-size: 1.3rem;
+    width: 25%;
+    height: 15%;
+    margin-top: 5%;
+  }
+  main img {
+    margin-left: 20%;
   }
 }
 #projects {
@@ -290,6 +320,11 @@ main img {
   }
   #projects .card .inner-card-wrapper p {
     width: 85vw;
+  }
+}
+@media only screen and (min-width: 2080px) {
+  #projects p {
+    font-size: 1.2rem;
   }
 }
 #other-projects {
@@ -373,6 +408,22 @@ main img {
     width: 90%;
   }
 }
+@media only screen and (min-width: 2080px) {
+  #other-projects .card-wrapper {
+    padding: 0 15rem;
+  }
+  #other-projects .card-wrapper .card:nth-child(2) {
+    width: 28rem;
+  }
+  #other-projects .card-wrapper .card:nth-child(2) h2 {
+    font-size: 2.2rem;
+    margin-top: -10%;
+  }
+  #other-projects .card-wrapper .card p {
+    width: 70%;
+    font-size: 1.3rem;
+  }
+}
 #contact {
   display: flex;
   flex-direction: column;
@@ -446,6 +497,9 @@ main img {
     height: 8vh;
     width: 30vw;
     font-size: 1.4rem;
+  }
+  #contact p {
+    text-align: center;
   }
 }
 * {
@@ -536,9 +590,22 @@ a {
 
   #about-section {
     text-align: center;
+    padding: 2rem 1rem;
   }
   #about-section p {
     width: 100%;
+  }
+}
+@media only screen and (min-width: 2080px) {
+  #commits {
+    margin-top: 13%;
+  }
+  #commits h2 {
+    font-size: 1.5rem;
+  }
+
+  #about-section h1 {
+    font-size: 2.5rem;
   }
 }
 

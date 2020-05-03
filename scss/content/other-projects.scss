@@ -97,3 +97,25 @@
     }
   }
 }
+
+@media only screen and (min-width: 2080px) {
+  #other-projects {
+    .card-wrapper {
+      padding: 0 15rem;
+
+      .card:nth-child(2) {
+        width: 28rem;
+
+        h2 {
+          font-size: 2.2rem;
+          margin-top: -10%;
+        }
+      }
+
+      .card p {
+        width: 70%;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}

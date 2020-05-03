@@ -88,6 +88,7 @@ main {
         width: 15rem;
         height: 5rem;
         border-radius: 0.3rem;
+        margin-left: 0;
 
         a {
           font-weight: 500;
@@ -98,6 +99,7 @@ main {
       #projects-btn {
         background: var.$offBlack;
         border: none;
+        margin-left: 0;
 
         a {
           color: var.$offWhite;
@@ -106,6 +108,8 @@ main {
 
       #resume-btn {
         background: none;
+        margin-left: 0;
+
         border: 2px solid var.$offBlack;
       }
     }
@@ -115,6 +119,33 @@ main {
       border-radius: 0px;
       margin-top: 40%;
       margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 2080px) {
+  main {
+    margin-top: 2.5%;
+    section {
+      h1 {
+        font-size: 4rem;
+      }
+
+      p {
+        font-size: 1.3rem;
+        margin-top: 3%;
+      }
+
+      button {
+        font-size: 1.3rem;
+        width: 25%;
+        height: 15%;
+        margin-top: 5%;
+      }
+    }
+
+    img {
+      margin-left: 20%;
     }
   }
 }
